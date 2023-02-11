@@ -15,7 +15,7 @@
         "id": "fixlang",
         "aliases": [
           "fixlang",
-          "fixlang"
+          "fix-lang"
         ],
         "extensions": [
           ".fix"
