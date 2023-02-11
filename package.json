@@ -1,0 +1,25 @@
+{
+  "name": "fixlangsyntax",
+  "displayName": "fix lang syntax support",
+  "description": "Provides fixlang syntax for vscode",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.75.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "fixlang",
+      "aliases": ["fixlang", "fixlang"],
+      "extensions": [".fx"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "fixlang",
+      "scopeName": "source.fx",
+      "path": "./syntaxes/fixlang.tmLanguage.json"
+    }]
+  }
+}

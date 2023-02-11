@@ -1,0 +1,93 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "fixlang",
+	"patterns": [
+		{
+			"include": "#comments"
+		},
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#operators"
+		},
+		{
+			"include": "#constants"
+		},
+		{
+			"include": "#strings"
+		},
+		{
+			"include": "#supports"
+		}
+	],
+	"repository": {
+		"comments": {
+			"patterns": [
+				{
+					"comment": "line comment start with //",
+					"name": "comment.line",
+					"match": "//.*"
+				},
+				{
+					"comment": "comment block is by surrounded /* */",
+					"name": "comment.block",
+					"begin": "/\\*",
+					"end": "\\*/"
+				}
+			]
+		},
+		"keywords": {
+			"patterns": [
+				{
+					"name": "keyword.control",
+					"match": "\\b(if|else|break|continue|loop)\\b"
+				},
+				{
+					"name": "keyword.other",
+					"match": "\\b(let)\\b"
+				},
+				{
+					"name": "keyword.module",
+					"match": "\\b(module)\\b"
+				}
+			]
+		},
+		"constants": {
+			"patterns": [
+				{
+					"name": "constant.language",
+					"match": "\\b(true|false)\\b"
+				},
+				{
+					"name": "constant.numeric",
+					"match": "\\b([0-9\\.e]+)\\b"
+				}
+			]
+		},
+		"strings": {
+			"name": "string.quoted.double",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape",
+					"match": "\\\\."
+				}
+			]
+		},
+		"supports": {
+			"patterns": [
+				{
+					"name": "support.type",
+					"match": "\\b(Int|Bool)\\b"
+				},
+				{
+					"name": "support.function",
+					"match": "\\b(Array|IOState)\\b"
+				}
+			]
+		}
+	},
+	"scopeName": "source.fx"
+}
