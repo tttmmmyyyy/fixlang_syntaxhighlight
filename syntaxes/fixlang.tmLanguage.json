@@ -30,7 +30,7 @@
 					"match": "//.*"
 				},
 				{
-					"comment": "comment block is by surrounded /* */",
+					"comment": "comment block is surrounded by /* */",
 					"name": "comment.block",
 					"begin": "/\\*",
 					"end": "\\*/"
