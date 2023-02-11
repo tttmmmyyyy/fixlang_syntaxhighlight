@@ -50,7 +50,7 @@
 				{
 					"name": "keyword.operator",
 					"match": "\\->"
-				},				
+				},
 				{
 					"name": "keyword.module",
 					"match": "\\b(module)\\b"
@@ -77,7 +77,6 @@
 				}
 			]
 		},
-
 		"constants": {
 			"patterns": [
 				{
@@ -114,5 +113,5 @@
 			]
 		}
 	},
-	"scopeName": "source.fx"
+	"scopeName": "source.fix"
 }

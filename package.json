@@ -10,16 +10,25 @@
     "Programming Languages"
   ],
   "contributes": {
-    "languages": [{
-      "id": "fixlang",
-      "aliases": ["fixlang", "fixlang"],
-      "extensions": [".fx"],
-      "configuration": "./language-configuration.json"
-    }],
-    "grammars": [{
-      "language": "fixlang",
-      "scopeName": "source.fx",
-      "path": "./syntaxes/fixlang.tmLanguage.json"
-    }]
+    "languages": [
+      {
+        "id": "fixlang",
+        "aliases": [
+          "fixlang",
+          "fixlang"
+        ],
+        "extensions": [
+          ".fix"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "fixlang",
+        "scopeName": "source.fix",
+        "path": "./syntaxes/fixlang.tmLanguage.json"
+      }
+    ]
   }
 }
