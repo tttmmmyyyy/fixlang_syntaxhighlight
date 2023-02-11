@@ -48,11 +48,36 @@
 					"match": "\\b(let)\\b"
 				},
 				{
+					"name": "keyword.operator",
+					"match": "\\->"
+				},				
+				{
 					"name": "keyword.module",
 					"match": "\\b(module)\\b"
+				},
+				{
+					"match": "\\-\\-",
+					"name": "keyword.operator"
+				},
+				{
+					"match": "\\+\\+",
+					"name": "keyword.operator"
+				},
+				{
+					"match": "(==|!=|<=|>=|<[^<]|>[^>])",
+					"name": "keyword.operator"
+				},
+				{
+					"match": "(=|\\+=|\\-=|\\|=|\\^=|\\*=|/=|:=|%=|<<=|>>=|&\\^=|&=)",
+					"name": "keyword.operator"
+				},
+				{
+					"match": "(\\+|\\-|\\*|/|%)",
+					"name": "keyword.operator"
 				}
 			]
 		},
+
 		"constants": {
 			"patterns": [
 				{
