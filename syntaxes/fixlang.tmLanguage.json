@@ -19,6 +19,9 @@
 		},
 		{
 			"include": "#supports"
+		},
+		{
+			"include": "#storages"
 		}
 	],
 	"repository": {
@@ -40,39 +43,31 @@
 		"keywords": {
 			"patterns": [
 				{
-					"name": "keyword.control",
-					"match": "\\b(if|else|break|continue|loop)\\b"
+					"match": "\\b(if|else)\\b",
+					"name": "keyword.control"
 				},
 				{
-					"name": "keyword.other",
-					"match": "\\b(let)\\b"
+					"match": "\\b(let|=|in)\\b",
+					"name": "keyword.let"
 				},
 				{
-					"name": "keyword.operator",
-					"match": "\\->"
-				},
-				{
-					"name": "keyword.module",
-					"match": "\\b(module)\\b"
-				},
-				{
-					"match": "\\-\\-",
-					"name": "keyword.operator"
-				},
-				{
-					"match": "\\+\\+",
-					"name": "keyword.operator"
+					"match": "\\b(import)\\b",
+					"name": "keyword.import"
 				},
 				{
 					"match": "(==|!=|<=|>=|<[^<]|>[^>])",
 					"name": "keyword.operator"
 				},
 				{
-					"match": "(=|\\+=|\\-=|\\|=|\\^=|\\*=|/=|:=|%=|<<=|>>=|&\\^=|&=)",
+					"match": "(\\+|\\-|\\*|/|%)",
 					"name": "keyword.operator"
 				},
 				{
-					"match": "(\\+|\\-|\\*|/|%)",
+					"match": "(\\.|\\$|>>|<<)",
+					"name": "keyword.functional"
+				},
+				{
+					"match": "\\b(\\->)\\b",
 					"name": "keyword.operator"
 				}
 			]
@@ -81,7 +76,7 @@
 			"patterns": [
 				{
 					"name": "constant.language",
-					"match": "\\b(true|false)\\b"
+					"match": "\\b(true|false|nullptr)\\b"
 				},
 				{
 					"name": "constant.numeric",
@@ -103,12 +98,20 @@
 		"supports": {
 			"patterns": [
 				{
-					"name": "support.type",
-					"match": "\\b(Int|Bool)\\b"
+					"match": "\\b([A-Z][A-Za-z0-9]*)\\b",
+					"name": "support.class"
+				}
+			]
+		},
+		"storages": {
+			"patterns": [
+				{
+					"match": "\\b(type|struct|union|module|namespace|impl|trait)\\b",
+					"name": "storage.type"
 				},
 				{
-					"name": "support.function",
-					"match": "\\b(Array|IOState)\\b"
+					"match": "\\b(box|unbox)\\b",
+					"name": "storage.modifier"
 				}
 			]
 		}
