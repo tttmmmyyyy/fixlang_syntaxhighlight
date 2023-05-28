@@ -43,7 +43,7 @@
 		"keywords": {
 			"patterns": [
 				{
-					"match": "\\b(if|else)\\b",
+					"match": "\\b(if|else|do)\\b",
 					"name": "keyword.control"
 				},
 				{
@@ -80,7 +80,7 @@
 				},
 				{
 					"name": "constant.numeric",
-					"match": "\\b([0-9\\.e]+)\\b"
+					"match": "\\b((\\-)?[0-9]+(\\.[0-9]+)?(e[\\+|\\-]?[0-9]+)?)\\b"
 				}
 			]
 		},
