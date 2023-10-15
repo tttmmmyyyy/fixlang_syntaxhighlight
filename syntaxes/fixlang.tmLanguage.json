@@ -47,7 +47,7 @@
 					"name": "keyword.control"
 				},
 				{
-					"match": "\\b(let|=|in)\\b",
+					"match": "\\b(let|=|in|eval)\\b",
 					"name": "keyword.let"
 				},
 				{
