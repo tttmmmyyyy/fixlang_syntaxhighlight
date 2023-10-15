@@ -5,7 +5,7 @@
   "version": "0.0.1",
   "repository": {
     "type": "git",
-    "url": "https://github.com/tttmmmyyyy/fixlang_syntaxhightlight.git"
+    "url": "https://github.com/tttmmmyyyy/fixlang_syntaxhighlight.git"
   },
   "engines": {
     "vscode": "^1.75.0"
