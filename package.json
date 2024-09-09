@@ -1,5 +1,5 @@
 {
-  "name": "fixlang-syntax",
+  "name": "fixlangsyntax",
   "displayName": "Fix-lang syntax support",
   "description": "Provides fixlang syntax for vscode",
   "version": "0.0.2",
