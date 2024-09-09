@@ -1,18 +1,21 @@
 {
-  "name": "fixlangsyntax",
+  "name": "fixlang-syntax",
   "displayName": "Fix-lang syntax support",
   "description": "Provides fixlang syntax for vscode",
-  "version": "0.0.1",
+  "version": "0.0.2",
+  "publisher": "tttmmmyyyy",
+  "license": "MIT",
+  "categories": [
+    "Programming Languages"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/tttmmmyyyy/fixlang_syntaxhighlight.git"
   },
+  "icon": "icon.png",
   "engines": {
     "vscode": "^1.75.0"
   },
-  "categories": [
-    "Programming Languages"
-  ],
   "contributes": {
     "languages": [
       {
@@ -34,6 +37,5 @@
         "path": "./syntaxes/fixlang.tmLanguage.json"
       }
     ]
-  },
-  "publisher": "tttmmmyyyy"
+  }
 }

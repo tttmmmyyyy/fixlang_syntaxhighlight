@@ -1,9 +1,9 @@
 # Change Log
 
-All notable changes to the "fixlangsyntax" extension will be documented in this file.
+## [0.0.1] - 2024-09-09
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
+- Set icon image.
 
-## [Unreleased]
+## [0.0.1] - 2023-10-16
 
-- Initial release
+- Initial release.
