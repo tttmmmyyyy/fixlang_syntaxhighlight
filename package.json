@@ -2,7 +2,7 @@
   "name": "fixlangsyntax",
   "displayName": "Fix-lang syntax support",
   "description": "Provides fixlang syntax for vscode",
-  "version": "0.0.3",
+  "version": "1.0.0",
   "publisher": "tttmmmyyyy",
   "license": "MIT",
   "categories": [
